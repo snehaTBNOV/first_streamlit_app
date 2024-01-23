@@ -33,16 +33,16 @@ streamlit.header("Fruityvice Fruit Advice!")
 
 #to handle error
 
-'''try:
- fruit_choice = streamlit.text_input('What fruit would you like information about?')
- if not fruit_choice:
-   streamlit.error("please select a fruit to get info")
- else:
-   fruityvice_response = requests.get("https://fruityvice.com/api/fruit/"+fruit_choice)
-   fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
-   streamlit.write(fruityvice_normalized)
-except URLError as e:
- streamlit.error()'''
+#try:
+ #fruit_choice = streamlit.text_input('What fruit would you like information about?')
+ #if not fruit_choice:
+   #streamlit.error("please select a fruit to get info")
+ #else:
+   #fruityvice_response = requests.get("https://fruityvice.com/api/fruit/"+fruit_choice)
+   #fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
+   #streamlit.write(fruityvice_normalized)
+#except URLError as e:
+ #streamlit.error()
 
 #cretae a repeatable fun of code
 def get_fruityvice_data(this.fruit_choice)
