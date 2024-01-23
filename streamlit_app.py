@@ -34,7 +34,7 @@ fruityvice_response = requests.get("https://fruityvice.com/api/fruit/"+fruit_cho
 #streamlit.text(fruityvice_response.json())
 # to view the json more nicer
 fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
-streamlit.dataframe(fruityvice_normalized)
+streamlit.write(fruityvice_normalized)
 
 
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
