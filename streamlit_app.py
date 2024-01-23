@@ -45,8 +45,8 @@ streamlit.header("Fruityvice Fruit Advice!")
  #streamlit.error()
 
 #cretae a repeatable fun of code
-def get_fruityvice_data(this.fruit_choice):
- fruityvice_response = requests.get("https://fruityvice.com/api/fruit/"+this.fruit_choice)
+def get_fruityvice_data(fruit_choice):
+ fruityvice_response = requests.get("https://fruityvice.com/api/fruit/"+ fruit_choice)
  fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
  return fruityvice_normalized
 
