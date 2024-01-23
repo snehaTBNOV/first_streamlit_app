@@ -75,7 +75,7 @@ except URLError as e:
 my_cur = my_cnx.cursor()
 #my_cur.execute("SELECT CURRENT_USER(), CURRENT_ACCOUNT(), CURRENT_REGION()")
 my_cur.execute("SELECT * from fruit_load_list")'''
-
+ 
 
 
 
